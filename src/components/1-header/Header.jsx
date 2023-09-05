@@ -35,7 +35,15 @@ const Header = () => {
             (link) => {
               return (
                 <li key={link}>
-                  <a href="#">{link}</a>
+                  <a href={
+                    link == 'About' 
+                    ? '#about'
+                    : link == "Projects"
+                    ? "#projects"
+                    : link == "Contact"
+                    ? "#contact"
+                    : "#speaking"
+                  }>{link}</a>
                 </li>
               );
             }

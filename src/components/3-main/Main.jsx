@@ -30,7 +30,7 @@ const Main = () => {
   };
 
   return (
-    <main className="flex">
+    <main className="flex" id="projects">
       <section className="flex  left-section">
         <button
           onClick={() => {
@@ -100,11 +100,13 @@ const Main = () => {
                 key={item.projectTitle}
                 className="card"
               >
-                <img
-                  style={{ borderRadius: "5px", width: 266 }}
-                  src={item.imgPath}
-                  alt="image website"
-                />
+                <IconButton href={item.linkPath} target="_blank" sx={{p: '0'}}>
+                  <img
+                    style={{ borderRadius: "5px", width: 266 }}
+                    src={item.imgPath}
+                    alt="image website"
+                  />
+                </IconButton>
 
                 <Stack sx={{ width: "266px", padding: "1rem 0.6rem" }}>
                   <Typography

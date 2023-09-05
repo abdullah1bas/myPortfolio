@@ -70,6 +70,7 @@ const Hero = () => {
         </motion.h1>
 
         <Typography
+          id='about'
           className="sub-title"
           sx={{
             color: "var(--subtitle)",
@@ -88,6 +89,7 @@ const Hero = () => {
         </Typography>
 
         <Stack
+          id="speaking"
           direction={"row"}
           style={{
             gap: "1rem",
