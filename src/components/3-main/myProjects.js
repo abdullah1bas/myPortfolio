@@ -17,10 +17,10 @@ import leon from '../../../public/images/leon.png'
 
 export const myProjects = [
   {
-    projectTitle: "E-commerce",
+    projectTitle: "FashionFusion",
     category: "react",
     imgPath: Ecommerce,
-    description: "The e-commerce website is designed to showcase a wide range of commercial products. It offers a user-friendly interface for customers to browse and purchase items online. The website provides detailed product descriptions, high-quality images, and secure payment options to ensure a seamless shopping experience. With its intuitive navigation and responsive design, customers can easily find and buy products of their choice. The website also offers customer support and order tracking features to enhance customer satisfaction and loyalty.",
+    description: "The FashionFusion website is designed to showcase a wide range of commercial products. It offers a user-friendly interface for customers to browse and purchase items online. The website provides detailed product descriptions, high-quality images, and secure payment options to ensure a seamless shopping experience. With its intuitive navigation and responsive design, customers can easily find and buy products of their choice. The website also offers customer support and order tracking features to enhance customer satisfaction and loyalty.",
     linkPath: "https://ecommerce-823a2.firebaseapp.com",
     githubPath: "https://github.com/abdullah1bas/React-E-commerce-with-Strapi",
   },
