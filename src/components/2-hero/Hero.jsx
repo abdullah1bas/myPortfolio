@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <Stack
       direction={"row"}
-      sx={{ marginTop: "3rem", alignItems: "center" }}
+      sx={{ marginTop: "3rem", alignItems: "center"}}
     >
       <Box
         sx={{
@@ -64,6 +64,7 @@ const Hero = () => {
             lineHeight: "3.3rem",
             margin: "24px 0",
             color: "var(--title)",
+            position: 'relative'
           }}
         >
           Software designer, FrontEnd Developer.
@@ -77,6 +78,7 @@ const Hero = () => {
             fontSize: "0.9rem",
             lineHeight: "1.65rem",
             marginBottom: "32px",
+            position: 'relative'
           }}
         >
           I am Abdullah Fadel front-end user interface developer and I am
@@ -94,6 +96,7 @@ const Hero = () => {
           style={{
             gap: "1rem",
             alignItems: "center",
+            position: 'relative'
           }}
         >
           {[

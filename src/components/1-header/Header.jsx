@@ -1,23 +1,8 @@
-import { useEffect, useState } from "react";
 import "./header.css";
 
-const Header = () => {
-  const [showModal, setshowModal] = useState(false);
-  const [theme, setTheme] = useState(
-    localStorage.getItem("currentMode")
-      ? localStorage.getItem("currentMode")
-      : "dark"
-  );
-
-  useEffect(() => {
-    if (theme === "light") {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-    } else {
-      document.body.classList.remove("light");
-      document.body.classList.add("dark");
-    }
-  }, [theme]);
+// eslint-disable-next-line react/prop-types
+const Header = ({setshowModal, theme, setTheme, showModal}) => {
+  
 
   return (
     <header className="flex">
@@ -26,11 +11,12 @@ const Header = () => {
           setshowModal(true);
         }}
         className="menu icon-menu flex"
+        style={{position: 'relative'}}
       ></button>
       <div />
 
       <nav>
-        <ul className="flex">
+        <ul className="flex" style={{position: 'relative'}}>
           {["About", "Articles", "Projects", "Speaking", "Contact"].map(
             (link) => {
               return (
@@ -63,6 +49,7 @@ const Header = () => {
           setTheme(localStorage.getItem("currentMode"));
         }}
         className="mode flex"
+        style={{position: 'relative'}}
       >
         {theme === "dark" ? (
           <span className="icon-moon-o"> </span>
@@ -72,7 +59,7 @@ const Header = () => {
       </button>
 
       {showModal && (
-        <div className="fixed">
+        <div className="fixed" style={{position: 'relative'}}>
           <ul className="modal">
             <li>
               <button

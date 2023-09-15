@@ -177,3 +177,18 @@ html {
     font-size: 1rem;
   }
 }
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: -4.8rem;
+  width: calc(100% + (var(--container-padding) * 2));
+  height: calc(100% + 3rem);
+}
+@media (max-width: 1000px) {
+  #tsparticles {
+    --container-padding: 1.7rem;
+    left: -1.7rem;
+    width: calc(100% + (var(--container-padding) * 2));
+  }
+}

@@ -2,18 +2,8 @@ import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Button,
-  IconButton,
-  Stack,
-  Tooltip,
-  Typography,
-} from "@mui/material";
-import {
-  ArrowRightAltOutlined,
-  GitHub,
-  InsertLink,
-} from "@mui/icons-material";
+import { Button, IconButton, Stack, Tooltip, Typography } from "@mui/material";
+import { ArrowRightAltOutlined, GitHub, InsertLink } from "@mui/icons-material";
 
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
@@ -30,7 +20,7 @@ const Main = () => {
   };
 
   return (
-    <main className="flex" id="projects">
+    <main className="flex" id="projects" style={{ position: "relative" }}>
       <section className="flex  left-section">
         <button
           onClick={() => {
@@ -100,7 +90,11 @@ const Main = () => {
                 key={item.projectTitle}
                 className="card"
               >
-                <IconButton href={item.linkPath} target="_blank" sx={{p: '0'}}>
+                <IconButton
+                  href={item.linkPath}
+                  target="_blank"
+                  sx={{ p: "0" }}
+                >
                   <img
                     style={{ borderRadius: "5px", width: 266 }}
                     src={item.imgPath}
@@ -191,7 +185,6 @@ const Main = () => {
                       <ArrowRightAltOutlined />
                     </Button>
                   </Stack>
-                  
                 </Stack>
               </motion.article>
             );
